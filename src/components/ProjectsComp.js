@@ -11,21 +11,39 @@ const items = [
   },
   {
     key: "c",
-    logo: "/images/TheGreatCourses.png",
-    logoActive: "/images/TheGreatCourses_Hover.png",
+    logo: "/images/blog.svg",
+    logoActive: "/images/blog-hover.svg",
     video: "/videos/blog.mp4",
   },
   {
     key: "d",
-    logo: "/images/Vox.svg",
-    logoActive: "/images/Vox_Hover.svg",
+    logo: "/images/ordering.svg",
+    logoActive: "/images/ordering-hover.svg",
     video: "/videos/orders.mp4",
   },
   {
     key: "b",
-    logo: "/images/NewYorkTimes.svg",
-    logoActive: "/images/NewYorkTimes.svg",
+    logo: "/images/player.svg",
+    logoActive: "/images/player-hover.svg",
     video: "/videos/player.mp4",
+  },
+  {
+    key: "e",
+    logo: "/images/task-mic.svg",
+    logoActive: "/images/task-mic-hover.svg",
+    video: "/videos/speechly.mp4",
+  },
+  {
+    key: "f",
+    logo: "/images/joelene.svg",
+    logoActive: "/images/joelene-hover.svg",
+    video: "/videos/joelene.mp4",
+  },
+  {
+    key: "g",
+    logo: "/images/martina.svg",
+    logoActive: "/images/martina-hover.svg",
+    video: "/videos/martina.mp4",
   },
 ]
 
