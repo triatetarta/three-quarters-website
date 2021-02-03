@@ -30,6 +30,9 @@ const Footer = () => {
           <div className="title">Contact</div>
           <ul>
             <li>
+              <p>Dimitrios Chatziioannou</p>
+            </li>
+            <li>
               <a
                 href="mailto:threequartersdev@gmail.com"
                 target="_blank"
@@ -134,6 +137,13 @@ const StyledFooter = styled.footer`
       ul {
         li {
           line-height: 1.5rem;
+          p {
+            color: var(--clr-light-grey);
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--clr-light-grey);
+          }
+
           a {
             color: var(--clr-white);
             white-space: nowrap;

@@ -1,11 +1,12 @@
 import React from "react"
+import ProjectsComp from "../components/ProjectsComp"
 import SEO from "../components/seo"
 
 const Projects = () => {
   return (
     <>
       <SEO title="Projects" />
-      <h1>Project Page</h1>
+      <ProjectsComp />
     </>
   )
 }

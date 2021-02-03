@@ -4,6 +4,7 @@ import Logo from "./Logo"
 import styled from "styled-components"
 import { RiCodeBoxFill } from "react-icons/ri"
 import { CgWebsite } from "react-icons/cg"
+import { MdEmail } from "react-icons/md"
 
 const Navigation = () => {
   return (
@@ -16,17 +17,6 @@ const Navigation = () => {
       <div className="menu">
         <ul>
           <li>
-            <Link to="/documentation">
-              <button>
-                <span className="hover"></span>
-                <span className="icon">
-                  <CgWebsite />
-                </span>
-                <span className="label">Documentation</span>
-              </button>
-            </Link>
-          </li>
-          <li>
             <Link to="/projects">
               <button className="projects">
                 <span className="hover"></span>
@@ -37,6 +27,28 @@ const Navigation = () => {
               </button>
             </Link>
           </li>
+          <li>
+            <Link to="/skills">
+              <button>
+                <span className="hover"></span>
+                <span className="icon">
+                  <CgWebsite />
+                </span>
+                <span className="label">Skills</span>
+              </button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact">
+              <button className="contact">
+                <span className="hover"></span>
+                <span className="icon">
+                  <MdEmail />
+                </span>
+                <span className="label">Contact</span>
+              </button>
+            </Link>
+          </li>
         </ul>
       </div>
     </StyledNav>
@@ -44,8 +56,8 @@ const Navigation = () => {
 }
 
 const StyledNav = styled.nav`
-  min-height: 15vh;
-  width: var(--fixed-width);
+  min-height: 5vh;
+  max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   align-items: center;
