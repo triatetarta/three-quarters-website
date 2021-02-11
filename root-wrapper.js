@@ -125,6 +125,91 @@ button:hover .label {
   transition-delay: 0.25s;
   opacity: 1;
 }
+
+
+/* projects */
+.project-wrapper{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  .details{
+    display: flex;
+    background: var(--clr-primary-2);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    .information{
+      width: 55%;
+      padding: 40px 45px 30px 45px;
+      .label{
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: -0.05rem;
+      }
+      h2{
+        margin-bottom: 1.2rem;
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1.25rem;
+      }
+      .tech-used{
+        font-size: 1rem;
+        font-weight: 300;
+
+        span {
+          font-weight: 500;
+          display: inline-block;
+          padding: 2px 5px;
+          border-radius: 4px;
+          border: 1px solid #fff;
+          margin-left: 1rem;
+          margin-top: .8rem;
+        }
+      }
+    }
+    .buttons-side{
+      width: 45%;
+      background: rgba(0,0,0,0.133);
+      padding-right: 0;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      padding: 40px 45px 30px 45px;
+      .title{
+        margin-bottom: 1rem;
+
+        .icon{
+          display: inline-block;
+          vertical-align: middle;
+         
+
+          svg{ 
+            display: block;
+            font-size: 1.4rem;
+          }
+        }
+        .label{
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 8px;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+      .buttons{
+        a{
+          margin-right: 20px;
+          .project{
+            background: #fff;
+            color: var(--clr-primary-2);
+
+            .hover{
+              background: var(--clr-primary-2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 `
 
 export const wrapPageElement = ({ element, props }) => {

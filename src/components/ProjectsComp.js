@@ -1,6 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const items = [
   {
@@ -8,42 +9,56 @@ const items = [
     logo: "/images/email.svg",
     logoActive: "/images/email-hover.svg",
     video: "/videos/MasterClass-Preview-Cropped.mp4",
+    url: "/email",
   },
   {
     key: "c",
     logo: "/images/blog.svg",
     logoActive: "/images/blog-hover.svg",
     video: "/videos/blog.mp4",
+    url: "/blog",
   },
   {
     key: "d",
     logo: "/images/ordering.svg",
     logoActive: "/images/ordering-hover.svg",
     video: "/videos/orders.mp4",
+    url: "/ordersapp",
   },
   {
     key: "b",
     logo: "/images/player.svg",
     logoActive: "/images/player-hover.svg",
     video: "/videos/player.mp4",
+    url: "/musicplayer",
   },
   {
     key: "e",
     logo: "/images/task-mic.svg",
     logoActive: "/images/task-mic-hover.svg",
     video: "/videos/speechly.mp4",
+    url: "/tasktracker",
   },
   {
     key: "f",
     logo: "/images/joelene.svg",
     logoActive: "/images/joelene-hover.svg",
     video: "/videos/joelene.mp4",
+    url: "/joelene",
   },
   {
     key: "g",
     logo: "/images/martina.svg",
     logoActive: "/images/martina-hover.svg",
     video: "/videos/martina.mp4",
+    url: "/martina",
+  },
+  {
+    key: "h",
+    logo: "/images/game-dock.svg",
+    logoActive: "/images/game-dock-hover.svg",
+    video: "/videos/gamedock.mp4",
+    url: "/gamedock",
   },
 ]
 
@@ -61,7 +76,7 @@ const ProjectsComp = () => {
   )
 }
 
-const Item = ({ logo, logoActive, video, ...props }) => {
+const Item = ({ logo, logoActive, video, url, ...props }) => {
   const [isHover, setIsHover] = React.useState(false)
   let videoRef = React.useRef()
 
@@ -113,50 +128,52 @@ const Item = ({ logo, logoActive, video, ...props }) => {
 
   return (
     <ItemStyles className="cell">
-      <motion.div
-        animate={isHover ? "active" : "inactive"}
-        variants={boxVariants}
-        className="aspectratio box"
-        data-ratio="16:9"
-        // whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-      >
+      <Link to={`/projects${url}`}>
         <motion.div
-          className="video-container"
           animate={isHover ? "active" : "inactive"}
-          variants={variants}
+          variants={boxVariants}
+          className="aspectratio box"
+          data-ratio="16:9"
+          // whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
         >
-          <video
-            ref={videoRef}
-            className={`video`}
-            width="320"
-            height="240"
-            loop
-            autoPlay=""
-            muted
-            playsInline=""
+          <motion.div
+            className="video-container"
+            animate={isHover ? "active" : "inactive"}
+            variants={variants}
           >
-            <source src={video} type="video/mp4" />
-          </video>
-          <motion.div className="video-overlay" />
+            <video
+              ref={videoRef}
+              className={`video`}
+              width="320"
+              height="240"
+              loop
+              autoPlay=""
+              muted
+              playsInline=""
+            >
+              <source src={video} type="video/mp4" />
+            </video>
+            <motion.div className="video-overlay" />
+          </motion.div>
+          <motion.img
+            animate={isHover ? "inactive" : "active"}
+            variants={variants}
+            transition={{ duration: 0.25 }}
+            src={logo}
+            className="logo"
+          />
+          <motion.img
+            src={logoActive}
+            animate={isHover ? "active" : "inactive"}
+            variants={variants}
+            transition={{ duration: 0.25 }}
+            className=".logo.logo--active"
+          />
         </motion.div>
-        <motion.img
-          animate={isHover ? "inactive" : "active"}
-          variants={variants}
-          transition={{ duration: 0.25 }}
-          src={logo}
-          className="logo"
-        />
-        <motion.img
-          src={logoActive}
-          animate={isHover ? "active" : "inactive"}
-          variants={variants}
-          transition={{ duration: 0.25 }}
-          className=".logo.logo--active"
-        />
-      </motion.div>
+      </Link>
     </ItemStyles>
   )
 }
@@ -179,10 +196,10 @@ const ProjectStyles = styled.div`
     float: left;
     padding: 1em;
   }
-  .row .cell > * {
+  .row .cell > a > * {
     background: #222;
   }
-  .row .cell > * > * {
+  .row .cell > a > * > * {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,6 +226,7 @@ const ItemStyles = styled(motion.div)`
     transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 140%;
+    object-fit: cover;
   }
 
   .video-container {
