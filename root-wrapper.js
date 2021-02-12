@@ -132,10 +132,11 @@ button:hover .label {
   max-width: var(--max-width);
   margin: 0 auto;
   .details{
+    margin-top: 5rem;
     display: flex;
     background: var(--clr-primary-2);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     .information{
       width: 55%;
       padding: 40px 45px 30px 45px;
@@ -208,6 +209,46 @@ button:hover .label {
         }
       }
     }
+  }
+
+  .description {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    .left{
+      width: 60%;
+      padding: 40px 45px 30px 45px;
+      h3{
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+      p{
+        font-size: 1.05rem;
+        line-height: 1.8rem;
+        letter-spacing: .05rem;
+        font-weight: 200;
+
+        span{
+          background: #383343;
+          color: #edebff;
+          font-weight: 700;
+          border-radius: 4px;
+          padding: 2px 8px;
+          margin-left: 5px;
+          margin-right: 5px;
+
+          a{
+            text-decoration: none;
+            color: #edebff;
+          }
+        }
+      }
+    }
+    .right{
+      width: 40%;
+      padding: 40px 45px 30px 45px;
+    }
+    
   }
 }
 `

@@ -2,6 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { AiOutlineHome } from "react-icons/ai"
 
 const items = [
   {
@@ -64,15 +65,28 @@ const items = [
 
 const ProjectsComp = () => {
   return (
-    <ProjectStyles className="projects">
-      <h2 style={{ margin: "0 0 0.5rem 01rem" }}>My Projects</h2>
-      <div className="row">
-        {items.map((item, i) => {
-          const { key, ...rest } = item
-          return <Item key={item.key} {...rest} />
-        })}
-      </div>
-    </ProjectStyles>
+    <>
+      <ProjectStyles className="projects">
+        <h2>My Projects</h2>
+        <div className="row">
+          {items.map((item, i) => {
+            const { key, ...rest } = item
+            return <Item key={item.key} {...rest} />
+          })}
+        </div>
+      </ProjectStyles>
+      <HomeButton className="back-home-row">
+        <Link to="/">
+          <button className="back-btn">
+            <span className="hover"></span>
+            <span className="icon">
+              <AiOutlineHome />
+            </span>
+            <span className="label">Back Home</span>
+          </button>
+        </Link>
+      </HomeButton>
+    </>
   )
 }
 
@@ -184,7 +198,16 @@ const ProjectStyles = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  h2 {
+    margin: 0 0 0.5rem 1rem;
+    background: var(--clr-dark-grey);
+    padding: 2rem 0;
+    border-radius: 12px;
+    text-align: center;
+  }
 
   .row {
     display: flex;
@@ -273,6 +296,15 @@ const ItemStyles = styled(motion.div)`
     left: 0;
     width: 100%;
     height: 100%;
+  }
+`
+
+const HomeButton = styled.div`
+  text-align: center;
+  margin-bottom: 3rem;
+  .back-btn {
+    margin-top: 4rem;
+    background: var(--clr-primary-2);
   }
 `
 
