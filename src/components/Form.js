@@ -112,6 +112,10 @@ const DetailsStyle = styled.div`
   max-width: var(--max-width);
   margin: 0 auto;
 
+  @media screen and (max-width: 1024px) {
+    max-width: var(--width);
+  }
+
   @media screen and (max-width: 600px) {
     max-width: var(--width);
   }
@@ -154,8 +158,14 @@ const DetailsStyle = styled.div`
     }
 
     .form {
-      width: 70%;
+      width: 60%;
       display: flex;
+
+      @media screen and (max-width: 1024px) {
+        width: 55%;
+        align-items: center;
+        justify-content: center;
+      }
 
       @media screen and (max-width: 600px) {
         width: 100%;
@@ -165,6 +175,10 @@ const DetailsStyle = styled.div`
         width: 30%;
         margin-right: 2.5rem;
         margin-top: 2rem;
+
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
 
         @media screen and (max-width: 600px) {
           display: none;
@@ -179,6 +193,10 @@ const DetailsStyle = styled.div`
         display: flex;
         flex-direction: column;
         width: 70%;
+
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+        }
 
         @media screen and (max-width: 600px) {
           width: 100%;
@@ -228,13 +246,17 @@ const DetailsStyle = styled.div`
     }
 
     .info {
-      width: 30%;
+      width: 40%;
       background: rgba(0, 0, 0, 0.133);
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
       display: flex;
       align-items: flex-start;
       justify-content: center;
+
+      @media screen and (max-width: 1024px) {
+        width: 45%;
+      }
 
       @media screen and (max-width: 600px) {
         width: 100%;
@@ -259,6 +281,11 @@ const DetailsStyle = styled.div`
               letter-spacing: 1px;
               font-size: 1.2rem;
               border-bottom: 1px solid var(--clr-light-grey);
+
+              @media screen and (max-width: 1024px) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+              }
             }
 
             a {
@@ -283,6 +310,10 @@ const DetailsStyle = styled.div`
                 }
               }
             }
+          }
+
+          @media screen and (max-width: 1024px) {
+            font-size: 0.9rem;
           }
         }
       }

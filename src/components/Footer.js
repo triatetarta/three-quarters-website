@@ -178,6 +178,10 @@ const StyledFooter = styled.footer`
   }
 
   @media screen and (max-width: 1024px) {
+    .inner {
+      width: 80vw;
+      margin: 0 auto;
+    }
   }
 
   @media screen and (max-width: 600px) {

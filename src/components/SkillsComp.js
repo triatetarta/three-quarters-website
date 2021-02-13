@@ -291,6 +291,10 @@ const SkillStyles = styled.div`
   margin-top: 3rem;
   overflow: hidden;
 
+  @media screen and (max-width: 1024px) {
+    max-width: var(--width);
+  }
+
   .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

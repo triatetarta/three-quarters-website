@@ -201,6 +201,10 @@ const ProjectStyles = styled.div`
   margin-top: 3rem;
   margin-bottom: 3rem;
 
+  @media screen and (max-width: 1024px) {
+    max-width: var(--width);
+  }
+
   @media screen and (max-width: 600px) {
     margin-top: 1.5rem;
     margin-bottom: 0rem;
@@ -212,6 +216,11 @@ const ProjectStyles = styled.div`
     padding: 2rem 0;
     border-radius: 12px;
     text-align: center;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 1.8rem;
+      padding: 1.2rem 0;
+    }
 
     @media screen and (max-width: 600px) {
       font-size: 1.2rem;
