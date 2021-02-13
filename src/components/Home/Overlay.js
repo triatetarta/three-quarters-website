@@ -53,4 +53,31 @@ const StyledSection = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .web-dev-cont {
+      .text-cont {
+        .three-quarters {
+          font-size: 10em;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .web-dev-cont {
+      height: 110%;
+      .text-cont {
+        .three-quarters {
+          font-size: 5em;
+
+          span {
+            font-size: 1rem;
+            letter-spacing: -2px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
 `

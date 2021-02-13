@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
   --radius: 0.25rem;
 
+  --width: 80vw;
   --max-width: 1180px;
   --fixed-width: 1180px;
 }
@@ -99,6 +100,11 @@ button{
     transition: opacity 0.3s;
     will-change: opacity;
 
+ 
+  @media screen and (max-width: 600px) {
+    height: 18px;
+  }
+
     svg{
       width: 100%;
       height: 100%;
@@ -113,6 +119,15 @@ button{
     opacity: 0.85;
     transition: opacity 0.3s;
     will-change: opacity;
+
+    @media screen and (max-width: 600px) {
+      margin-left: 10px;
+  }
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 35px;
+    font-size: 1rem;
   }
 }
 

@@ -5,6 +5,8 @@ import styled from "styled-components"
 import { RiCodeBoxFill } from "react-icons/ri"
 import { CgWebsite } from "react-icons/cg"
 import { MdEmail } from "react-icons/md"
+import { GiHamburgerMenu } from "react-icons/gi"
+import { ImProfile } from "react-icons/im"
 
 const Navigation = () => {
   return (
@@ -49,7 +51,26 @@ const Navigation = () => {
               </button>
             </Link>
           </li>
+          <li>
+            <a href="www.google.com">
+              <button className="contact">
+                <span className="hover"></span>
+                <span className="icon">
+                  <ImProfile />
+                </span>
+                <span className="label">Resume</span>
+              </button>
+            </a>
+          </li>
         </ul>
+      </div>
+      <div className="mobile-menu">
+        <button>
+          <span className="hover"></span>
+          <span className="icon">
+            <GiHamburgerMenu />
+          </span>
+        </button>
       </div>
     </StyledNav>
   )
@@ -57,6 +78,7 @@ const Navigation = () => {
 
 const StyledNav = styled.nav`
   min-height: 5vh;
+  width: var(--width);
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
@@ -79,6 +101,47 @@ const StyledNav = styled.nav`
             background: var(--clr-primary-1);
           }
         }
+      }
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .menu {
+      display: none;
+    }
+
+    .mobile-menu {
+      display: block;
+
+      .icon {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    min-height: 3vh;
+    max-width: var(--width);
+    .logo {
+      a {
+        svg {
+          width: 120px;
+        }
+      }
+    }
+    .menu {
+      display: none;
+    }
+
+    .mobile-menu {
+      display: block;
+
+      .icon {
+        margin-right: 15px;
       }
     }
   }

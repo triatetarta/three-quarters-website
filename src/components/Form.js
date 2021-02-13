@@ -108,9 +108,13 @@ const Form = () => {
 }
 
 const DetailsStyle = styled.div`
-  height: 75vh;
+  min-height: 75vh;
   max-width: var(--max-width);
   margin: 0 auto;
+
+  @media screen and (max-width: 600px) {
+    max-width: var(--width);
+  }
 
   .contact-text {
     margin-top: 3rem;
@@ -120,8 +124,18 @@ const DetailsStyle = styled.div`
     text-align: center;
     border-radius: 12px;
 
+    @media screen and (max-width: 600px) {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
     h2 {
       padding: 2rem 0;
+
+      @media screen and (max-width: 600px) {
+        font-size: 1.2rem;
+        padding: 1rem 0;
+      }
     }
   }
 
@@ -131,6 +145,10 @@ const DetailsStyle = styled.div`
     background: var(--clr-primary-2);
     border-radius: 15px;
 
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
     .side {
       padding: 40px 45px 30px 45px;
     }
@@ -139,10 +157,18 @@ const DetailsStyle = styled.div`
       width: 70%;
       display: flex;
 
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
       .img {
         width: 30%;
         margin-right: 2.5rem;
         margin-top: 2rem;
+
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
 
         img {
           width: 100%;
@@ -153,6 +179,10 @@ const DetailsStyle = styled.div`
         display: flex;
         flex-direction: column;
         width: 70%;
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
 
         input {
           margin-bottom: 1rem;
@@ -206,11 +236,23 @@ const DetailsStyle = styled.div`
       align-items: flex-start;
       justify-content: center;
 
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        border-top-right-radius: 15px;
+        align-items: center;
+      }
+
       .contact {
         margin-top: 2rem;
+
+        @media screen and (max-width: 600px) {
+          margin-top: 0rem;
+        }
+
         ul {
           li {
             margin-top: 0.8rem;
+            margin-bottom: 0.4rem;
             p {
               text-align: right;
               color: var(--clr-white);
@@ -251,7 +293,12 @@ const DetailsStyle = styled.div`
     text-align: center;
     .back-btn {
       margin-top: 4rem;
+      margin-bottom: 4rem;
       background: var(--clr-primary-2);
+
+      @media screen and (max-width: 600px) {
+        margin-top: 3rem;
+      }
     }
   }
 `

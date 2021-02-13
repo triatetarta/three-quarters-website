@@ -313,6 +313,10 @@ const SkillStyles = styled.div`
         background: var(--clr-primary-2);
         padding: 1rem;
         text-align: center;
+
+        @media screen and (max-width: 600px) {
+          font-size: 1.2rem;
+        }
       }
 
       ul {
@@ -339,6 +343,11 @@ const SkillStyles = styled.div`
               margin-right: 6px;
               color: var(--clr-light-grey);
             }
+          }
+
+          @media screen and (max-width: 600px) {
+            font-size: 1rem;
+            padding: 1rem 1rem;
           }
         }
       }
@@ -410,6 +419,30 @@ const SkillStyles = styled.div`
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    max-width: var(--width);
+    margin-top: 1.5rem;
+
+    .about {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "core"
+        "tools"
+        "libraries"
+        "frameworks"
+        "learning";
+      grid-gap: 0.5rem;
+
+      .core-tech {
+        ul {
+          flex-wrap: wrap;
+        }
       }
     }
   }

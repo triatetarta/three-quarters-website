@@ -201,12 +201,22 @@ const ProjectStyles = styled.div`
   margin-top: 3rem;
   margin-bottom: 3rem;
 
+  @media screen and (max-width: 600px) {
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
+  }
+
   h2 {
-    margin: 0 0 0.5rem 1rem;
+    margin: 0 1rem 0.5rem 1rem;
     background: var(--clr-dark-grey);
     padding: 2rem 0;
     border-radius: 12px;
     text-align: center;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.2rem;
+      padding: 1rem 0;
+    }
   }
 
   .row {
@@ -218,6 +228,10 @@ const ProjectStyles = styled.div`
     flex-basis: calc(100% / 3);
     float: left;
     padding: 1em;
+
+    @media screen and (max-width: 600px) {
+      flex-basis: calc(100% / 2);
+    }
   }
   .row .cell > a > * {
     background: #222;
@@ -305,6 +319,12 @@ const HomeButton = styled.div`
   .back-btn {
     margin-top: 4rem;
     background: var(--clr-primary-2);
+  }
+
+  @media screen and (max-width: 600px) {
+    .back-btn {
+      margin-top: 2rem;
+    }
   }
 `
 

@@ -13,10 +13,16 @@ const Footer = () => {
           <div className="title">Navigation</div>
           <ul>
             <li>
-              <Link to="/documentation">Documentation</Link>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <Link to="/skills">Skills</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/contact">Resume</Link>
             </li>
           </ul>
         </div>
@@ -24,7 +30,6 @@ const Footer = () => {
           <Link to="/">
             <Logo />
           </Link>
-          <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
         </div>
         <div className="contact">
           <div className="title">Contact</div>
@@ -79,6 +84,7 @@ const Footer = () => {
 const StyledFooter = styled.footer`
   padding: 50px 25px;
   background: var(--clr-footer);
+  position: relative;
 
   .inner {
     display: flex;
@@ -166,6 +172,42 @@ const StyledFooter = styled.footer`
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 0 auto;
+
+    .inner {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .navigation {
+        text-align: center;
+      }
+
+      .logo {
+        a {
+          svg {
+            width: 130px;
+          }
+        }
+      }
+
+      .contact {
+        text-align: center;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
       }
     }
