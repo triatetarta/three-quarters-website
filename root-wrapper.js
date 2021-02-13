@@ -266,6 +266,10 @@ button:hover .label {
     
   }
 }
+
+.visible{
+  transform: translateX(0%);
+}
 `
 
 export const wrapPageElement = ({ element, props }) => {
