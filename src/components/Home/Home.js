@@ -7,7 +7,7 @@ import { Loader, Torus, useTexture, Shadow } from "@react-three/drei"
 import { MeshDistortMaterial } from "./DistortionMaterial"
 import Overlay from "./Overlay"
 
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+// const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
 
 function DistortedTorus(props) {
   const ref = useRef()
@@ -43,11 +43,7 @@ function DistortedTorus(props) {
   })
 
   return (
-    <Torus
-      ref={ref}
-      args={[5, 1.5, isMobile ? 128 : 512, isMobile ? 128 : 512]}
-      {...props}
-    >
+    <Torus ref={ref} args={[5, 1.5, 512, 512]} {...props}>
       <MeshDistortMaterial
         color="white"
         metalness={0.85}
