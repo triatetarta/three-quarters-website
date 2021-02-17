@@ -1,3 +1,4 @@
+/* eslint-disable no-sequences */
 import * as THREE from "three"
 import React, { Suspense, useLayoutEffect, useMemo, useRef } from "react"
 import { Canvas, useThree, useFrame } from "react-three-fiber"

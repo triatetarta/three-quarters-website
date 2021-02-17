@@ -18,6 +18,7 @@ import {
   FaGithub,
   FaFigma,
   FaMailchimp,
+  FaShopify,
 } from "react-icons/fa"
 import {
   SiStyledComponents,
@@ -78,11 +79,6 @@ const SkillsComp = () => {
                   <FaReact /> React
                 </li>
               </a>
-              <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
-                <li>
-                  <FaNodeJs /> NodeJs
-                </li>
-              </a>
             </ul>
           </div>
           <div className="tools">
@@ -136,11 +132,25 @@ const SkillsComp = () => {
                   <FaMailchimp /> Mailchimp
                 </li>
               </a>
+              <a
+                href="https://www.shopify.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <li>
+                  <FaShopify /> Shopify
+                </li>
+              </a>
             </ul>
           </div>
           <div className="libraries">
             <h2>Other Tech</h2>
             <ul>
+              <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
+                <li>
+                  <FaNodeJs /> NodeJs
+                </li>
+              </a>
               <a
                 href="https://github.com/axios/axios"
                 target="_blank"
