@@ -22,17 +22,17 @@ const ikosImage = graphql`
   }
 `
 
-const BlogQuarters = () => {
+const IkosPage = () => {
   const data = useStaticQuery(ikosImage)
 
   return (
     <>
-      <SEO title="Quarters Blog" />
+      <SEO title="Ikos Construction" />
       <div className="project-wrapper">
         <div className="details">
           <div className="information">
             <div className="label">01.</div>
-            <h2>Quarters Blog</h2>
+            <h2>Ikos Construction</h2>
             <div className="tech-used">
               Technologies used:
               <span>React</span>
@@ -41,8 +41,8 @@ const BlogQuarters = () => {
               <span>Contentful CMS</span>
               <span>Node.js</span>
               <span>Styled Components</span>
-              <span>Github Jobs API</span>
               <span>Mailchimp</span>
+              <span>Framer Motion</span>
             </div>
           </div>
           <div className="buttons-side">
@@ -54,7 +54,7 @@ const BlogQuarters = () => {
             </div>
             <div className="buttons">
               <a
-                href="https://quarters-blog.netlify.app/"
+                href="https://ikos-construction.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -67,7 +67,7 @@ const BlogQuarters = () => {
                 </button>
               </a>
               <a
-                href="https://github.com/triatetarta/quarters-blog"
+                href="https://github.com/triatetarta/ikos-gatsby-contentful"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -87,29 +87,17 @@ const BlogQuarters = () => {
           <div className="left">
             <h3>Project Description</h3>
             <p>
-              A <span>Gatsby</span> website for a Tech Blog. It includes
-              <span>Styled Components</span>, <span>SEO Optimization</span>and
-              uses the <span>Github Jobs API</span> to fetch search data. It is
-              connected to the <span>Contentful CMS</span> which allows you to
-              manage the content of each page. Each new page is being created
-              dynamically with <span>Node.js</span>. Subscription Form is
-              connected to
+              A <span>Gatsby</span> website for Ikos Construction Company. It
+              includes
+              <span>Styled Components</span> and <span>SEO Optimization</span>.
+              It is connected to the <span>Contentful CMS</span> which allows my
+              client to manage the content of each page of their projectd. Each
+              new page is being created dynamically with <span>Node.js</span>.
+              Subscription Form is connected to
               <span>Mailchimp</span>. The project is uploaded on
               <span>Netlify</span> via <span>Github</span> and uses webhooks for
-              automatic update.
-              <p>
-                *To temporarily unlock access to Github Jobs API demo, click
-                <span>
-                  <a
-                    href="https://cors-anywhere.herokuapp.com/corsdemo"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    here
-                  </a>
-                </span>
-                .
-              </p>
+              automatic update. All animations and page transitions were done
+              using <span>Framer Motion</span>.
             </p>
           </div>
           <div className="right">
@@ -122,4 +110,4 @@ const BlogQuarters = () => {
   )
 }
 
-export default BlogQuarters
+export default IkosPage

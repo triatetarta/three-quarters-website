@@ -31,7 +31,7 @@ const Martina = () => {
       <div className="project-wrapper">
         <div className="details">
           <div className="information">
-            <div className="label">01.</div>
+            <div className="label">10.</div>
             <h2>Martina Fit Pro</h2>
             <div className="tech-used">
               Technologies used:

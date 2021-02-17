@@ -31,7 +31,7 @@ const EmailDev = () => {
       <div className="project-wrapper">
         <div className="details">
           <div className="information">
-            <div className="label">01.</div>
+            <div className="label">09.</div>
             <h2>Email Development</h2>
             <div className="tech-used">
               Technologies used:

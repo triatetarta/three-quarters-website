@@ -31,7 +31,7 @@ const Joelene = () => {
       <div className="project-wrapper">
         <div className="details">
           <div className="information">
-            <div className="label">01.</div>
+            <div className="label">04.</div>
             <h2>Joelene Kylie</h2>
             <div className="tech-used">
               Technologies used:

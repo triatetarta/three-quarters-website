@@ -146,15 +146,34 @@ button:hover .label {
 .project-wrapper{
   max-width: var(--max-width);
   margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    max-width: var(--width);
+  }
+
+ 
+
+
+
   .details{
     margin-top: 5rem;
     display: flex;
     background: var(--clr-primary-2);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
     .information{
       width: 55%;
       padding: 40px 45px 30px 45px;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
       .label{
         margin-bottom: 1rem;
         font-size: 1.2rem;
@@ -166,6 +185,10 @@ button:hover .label {
         font-size: 2rem;
         font-weight: 800;
         line-height: 1.25rem;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 1.5rem;
+         }
       }
       .tech-used{
         font-size: 1rem;
@@ -189,6 +212,13 @@ button:hover .label {
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
       padding: 40px 45px 30px 45px;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+      }
+
       .title{
         margin-bottom: 1rem;
 
@@ -213,9 +243,17 @@ button:hover .label {
       .buttons{
         a{
           margin-right: 20px;
+          @media screen and (max-width: 1024px) {
+             font-size: .7rem;
+             }
+
           .project{
             background: #fff;
             color: var(--clr-primary-2);
+
+            @media screen and (max-width: 1024px) {
+              margin-bottom: .5rem;
+             }
 
             .hover{
               background: var(--clr-primary-2);
@@ -233,9 +271,19 @@ button:hover .label {
     .left{
       width: 60%;
       padding: 40px 45px 30px 45px;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        padding: 20px 10px;
+      }
+
       h3{
         font-size: 2rem;
         margin-bottom: 1.5rem;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 1.5rem;
+          }
       }
       p{
         font-size: 1.05rem;
@@ -251,6 +299,7 @@ button:hover .label {
           padding: 2px 8px;
           margin-left: 5px;
           margin-right: 5px;
+          white-space: nowrap;
 
           a{
             text-decoration: none;
@@ -262,6 +311,10 @@ button:hover .label {
     .right{
       width: 40%;
       padding: 40px 45px 30px 45px;
+
+      @media screen and (max-width: 600px) {
+       display: none;
+      }
     }
     
   }

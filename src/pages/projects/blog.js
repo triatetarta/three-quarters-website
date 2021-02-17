@@ -31,7 +31,7 @@ const BlogQuarters = () => {
       <div className="project-wrapper">
         <div className="details">
           <div className="information">
-            <div className="label">01.</div>
+            <div className="label">03.</div>
             <h2>Quarters Blog</h2>
             <div className="tech-used">
               Technologies used:

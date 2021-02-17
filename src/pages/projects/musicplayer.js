@@ -31,7 +31,7 @@ const MusicPlayer = () => {
       <div className="project-wrapper">
         <div className="details">
           <div className="information">
-            <div className="label">01.</div>
+            <div className="label">08.</div>
             <h2>Quarters Music Player</h2>
             <div className="tech-used">
               Technologies used:
