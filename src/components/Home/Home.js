@@ -81,7 +81,7 @@ export default function App() {
           <Shadow opacity={0.2} scale={[9, 1.5, 1]} position={[0, -8, 0]} />
         </Suspense>
       </Canvas>
-      <Loader />
+      {/* <Loader /> */}
     </>
   )
 }

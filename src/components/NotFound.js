@@ -12,6 +12,7 @@ const NotFound = () => {
 
 const NotFoundWrapper = styled.div`
   max-width: var(--max-width);
+  min-height: 70vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
