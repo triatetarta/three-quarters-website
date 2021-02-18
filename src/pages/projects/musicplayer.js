@@ -84,7 +84,7 @@ const MusicPlayer = () => {
               A <span>React</span> music player web app that fetches songs from
               local data via
               <span>Chillhop Music</span>. Styling was made with
-              <span>SASS</span>. UI Design ispiration by
+              <span>SASS</span>. UI Design inspiration by
               <span>Glassmorphism</span> design trends. All animations were made
               with <span>CSS Animations</span>. Final build uploaded on{" "}
               <span>Netlify</span> via <span>Github</span>.

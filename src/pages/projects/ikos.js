@@ -91,7 +91,7 @@ const IkosPage = () => {
               includes
               <span>Styled Components</span> and <span>SEO Optimization</span>.
               It is connected to the <span>Contentful CMS</span> which allows my
-              client to manage the content of each page of their projectd. Each
+              client to manage the content of each page of their projects. Each
               new page is being created dynamically with <span>Node.js</span>.
               Subscription Form is connected to
               <span>Mailchimp</span>. The project is uploaded on
