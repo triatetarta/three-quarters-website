@@ -48,7 +48,11 @@ const TektonJoinery = () => {
               <span className="label">View more:</span>
             </div>
             <div className="buttons">
-              <a href="https://google.com">
+              <a
+                href="https://tektonjoinery.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="contact project">
                   <span className="hover"></span>
                   <span className="icon">
@@ -57,7 +61,11 @@ const TektonJoinery = () => {
                   <span className="label">Project</span>
                 </button>
               </a>
-              <a href="https://google.com">
+              <a
+                href="https://github.com/threequartersdev/tekton-joinery"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="contact">
                   <span className="hover"></span>
                   <span className="icon">
