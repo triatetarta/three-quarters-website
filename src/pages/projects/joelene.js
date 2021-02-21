@@ -51,7 +51,7 @@ const Joelene = () => {
             </div>
             <div className="buttons">
               <a
-                href="https://joelene-kylie.netlify.app/"
+                href="https://www.joelenekylie.co.uk/"
                 target="_blank"
                 rel="noreferrer"
               >
