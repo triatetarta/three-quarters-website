@@ -75,6 +75,13 @@ const items = [
     video: "/videos/martina.mp4",
     url: "/martina",
   },
+  {
+    key: "k",
+    logo: "/images/tekton.svg",
+    logoActive: "/images/tekton-hover.svg",
+    video: "/videos/tekton.mp4",
+    url: "/tektonjoinery",
+  },
 ]
 
 const ProjectsComp = () => {
