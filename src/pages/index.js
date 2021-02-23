@@ -3,10 +3,10 @@ import SEO from "../components/seo"
 import Home from "../components/Home/Home"
 import styled from "styled-components"
 
-const IndexPage = () => {
+const IndexPage = ({ seoImage }) => {
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Home" image={seoImage} />
       <HomepageStyled className="homepage">
         <Home />
       </HomepageStyled>
