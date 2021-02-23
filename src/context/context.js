@@ -8,9 +8,11 @@ const GatsbyProvider = ({ children }) => {
 
   const seoImage = useStaticQuery(graphql`
     {
-      site {
-        siteMetadata {
-          image
+      file(relativePath: { eq: "threequarters.png" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }

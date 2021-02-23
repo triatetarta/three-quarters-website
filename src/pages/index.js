@@ -1,12 +1,17 @@
-import React from "react"
+import React, { useContext } from "react"
 import SEO from "../components/seo"
 import Home from "../components/Home/Home"
 import styled from "styled-components"
+import { GatsbyContext } from "../context/context"
 
-const IndexPage = ({ seoImage }) => {
+const IndexPage = () => {
+  const { seoImage } = useContext(GatsbyContext)
+
+  const { fluid } = seoImage.file.childImageSharp
+
   return (
     <>
-      <SEO title="Home" image={seoImage} />
+      <SEO title="Home" image={fluid} />
       <HomepageStyled className="homepage">
         <Home />
       </HomepageStyled>
