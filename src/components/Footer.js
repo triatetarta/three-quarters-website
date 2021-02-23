@@ -22,11 +22,7 @@ const Footer = () => {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <a
-                href="https://drive.google.com/file/d/1gUOIKIaFQWy7dgQ1Lcxe8gtG7x9nsGE_/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="#" target="_blank" rel="noreferrer">
                 Resume
               </a>
             </li>
