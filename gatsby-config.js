@@ -4,7 +4,7 @@ module.exports = {
     description: `Dimitrios Chatziioannou (aka Three Quarters), is a creative Web Developer based in London, UK.`,
     author: `@threequarters`,
     twitterUsername: `@threequartersDC`,
-    image: `/images/threequarters.png`,
+    image: `images/threequarters.png`,
     siteUrl: "https://www.threequarters.dev",
   },
   plugins: [
