@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Three Quarters | Web Developer`,
     description: `Dimitrios Chatziioannou (aka Three Quarters), is a creative Web Developer based in London, UK.`,
-    author: `@gatsbyjs`,
+    author: `@threequartersDC`,
+    image: `src/images/threequarters.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,7 +34,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/threequarters.png`, // This path is relative to the root of the site.
+        icon: `src/images/logoalter.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -3,14 +3,16 @@ import SEO from "../components/seo"
 import Home from "../components/Home/Home"
 import styled from "styled-components"
 
-const IndexPage = () => (
-  <>
-    <SEO title="Home" />
-    <HomepageStyled className="homepage">
-      <Home />
-    </HomepageStyled>
-  </>
-)
+const IndexPage = () => {
+  return (
+    <>
+      <SEO title="Home" />
+      <HomepageStyled className="homepage">
+        <Home />
+      </HomepageStyled>
+    </>
+  )
+}
 
 const HomepageStyled = styled.div`
   width: 100%;
