@@ -38,7 +38,7 @@ function SEO({ description, lang, meta, title, image, siteUrl }) {
         },
         {
           name: `image`,
-          content: metaImage,
+          content: `${siteUrl}${metaImage}`,
         },
         {
           property: `og:title`,
@@ -50,7 +50,7 @@ function SEO({ description, lang, meta, title, image, siteUrl }) {
         },
         {
           property: `og:image`,
-          content: metaImage,
+          content: `${siteUrl}${metaImage}`,
         },
         {
           property: `og:type`,
