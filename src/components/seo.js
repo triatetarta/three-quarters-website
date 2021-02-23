@@ -23,6 +23,7 @@ function SEO({ description, lang, meta, title, image, siteUrl }) {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   const metaImage = image || site.siteMetadata.image
+  const metaSiteUrl = siteUrl || site.siteMetadata.siteUrl
 
   return (
     <Helmet
@@ -50,7 +51,7 @@ function SEO({ description, lang, meta, title, image, siteUrl }) {
         },
         {
           property: `og:image`,
-          content: `${siteUrl}${metaImage}`,
+          content: `${metaSiteUrl}${metaImage}`,
         },
         {
           property: `og:type`,
@@ -70,7 +71,7 @@ function SEO({ description, lang, meta, title, image, siteUrl }) {
         },
         {
           name: `twitter:image`,
-          content: `${siteUrl}${metaImage}`,
+          content: `${metaSiteUrl}${metaImage}`,
         },
         {
           name: `twitter:description`,
