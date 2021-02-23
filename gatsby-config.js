@@ -2,8 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Three Quarters | Web Developer`,
     description: `Dimitrios Chatziioannou (aka Three Quarters), is a creative Web Developer based in London, UK.`,
-    author: `@threequartersDC`,
-    image: `src/images/threequarters.png`,
+    author: `@threequarters`,
+    twitterUsername: `@threequartersDC`,
+    image: `images/threequarters.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

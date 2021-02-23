@@ -87,7 +87,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-  image: `/src/threequarters.png`,
+  image: `images/threequarters.png`,
 }
 
 SEO.propTypes = {
