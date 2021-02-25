@@ -11,6 +11,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-171564761-1",
+        head: true,
+        anonymize: true,
+      },
+    },
+    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
