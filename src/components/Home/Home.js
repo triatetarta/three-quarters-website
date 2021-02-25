@@ -3,7 +3,7 @@ import * as THREE from "three"
 import React, { Suspense, useLayoutEffect, useMemo, useRef } from "react"
 import { Canvas, useThree, useFrame } from "react-three-fiber"
 import Environment from "@react-three/drei/Environment"
-import { Loader, Torus, useTexture, Shadow } from "@react-three/drei"
+import { Torus, useTexture, Shadow } from "@react-three/drei"
 import { MeshDistortMaterial } from "./DistortionMaterial"
 import Overlay from "./Overlay"
 
@@ -81,7 +81,6 @@ export default function App() {
           <Shadow opacity={0.2} scale={[9, 1.5, 1]} position={[0, -8, 0]} />
         </Suspense>
       </Canvas>
-      {/* <Loader /> */}
     </>
   )
 }

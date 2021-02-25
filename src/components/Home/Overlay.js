@@ -9,8 +9,9 @@ export default function Overlay() {
         <div className="text-cont">
           <div className="three-quarters">
             <span>Web</span>
-            {`Three`}
-            {`\nQuarters`}
+            Three
+            <br />
+            Quarters
             <span>Developer</span>
           </div>
         </div>

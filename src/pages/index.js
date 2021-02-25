@@ -2,11 +2,13 @@ import React from "react"
 import SEO from "../components/seo"
 import Home from "../components/Home/Home"
 import styled from "styled-components"
+import LoaderScreen from "../components/LoaderScreen"
 
 const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
+      <LoaderScreen />
       <HomepageStyled className="homepage">
         <Home />
       </HomepageStyled>
