@@ -54,7 +54,7 @@ const IkosPage = () => {
             </div>
             <div className="buttons">
               <a
-                href="https://ikos-construction.netlify.app/"
+                href="http://www.ikosconstruction.com/"
                 target="_blank"
                 rel="noreferrer"
               >
