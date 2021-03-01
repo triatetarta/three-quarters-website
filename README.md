@@ -1,6 +1,6 @@
 # Three Quarters - Portfolio Website
 
-A Gatsby website done with:
+A Gatsby website made with:
 
 1. **Three.js**
 
@@ -18,4 +18,4 @@ A Gatsby website done with:
 
 ## View website:
 
-https://www.threequarters.dev "Three Quarters"
+https://www.threequarters.dev
