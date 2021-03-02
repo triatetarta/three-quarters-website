@@ -64,7 +64,11 @@ const MobileMenu = () => {
             </Link>
           </li>
           <li>
-            <a href="www.google.com">
+            <a
+              href="https://drive.google.com/file/d/1YCp0Z32LuS-45Oqx33jUVu1Y8qricPdN/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button className="contact" onClick={() => setIsOpen(false)}>
                 <span className="hover"></span>
                 <span className="icon">
