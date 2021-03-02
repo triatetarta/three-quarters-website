@@ -23,7 +23,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://drive.google.com/file/d/1UT3RAi0_HW_NDgVN7R2D1vtTeedVO4sc/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YCp0Z32LuS-45Oqx33jUVu1Y8qricPdN/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
