@@ -58,7 +58,11 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a
+                href="https://drive.google.com/file/d/1UT3RAi0_HW_NDgVN7R2D1vtTeedVO4sc/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="contact">
                   <span className="hover"></span>
                   <span className="icon">
